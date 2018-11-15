@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:700|Montserrat:400,700');
-
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out;
+    }
 body{
-    max-width: 1920px;
+    max-width: 1922px;
     padding: 0;
     margin: 0;
 }
 header{
-    max-width: 1920px;
-    width: 1920px;
+    max-width: 1922px;
+    width: 1922px;
     height: 120px;
+    position: relative;
 }
 .header__logo{
-    margin-top: 31px;
+    margin-top: 40px;
     margin-left: 19px;
 }
 .logo__link{
+    margin-right: 63px;
     display: block;
 }
 .logo__img{
@@ -29,7 +36,8 @@ header{
     justify-content: space-between;
 }
 .nav__menu{
-padding-top: 50px;
+    padding-top: 34px;
+    padding-left: 8px;
 }
 .nav__list{
     list-style: none;
@@ -50,10 +58,12 @@ padding-top: 50px;
     font-weight: 400;
     line-height: 29px;
     text-decoration: none;
-    padding: 0px 24px;
+    outline: none;
+    padding: 0px 25px;
 }
 .nav__link::after{
-    width: calc( 100%- 36px*2);
+    margin-left: 27px;
+    width: calc(100% - 23px * 2);
     height: 2px;
     background-color: #e39a8b;
     display: block;
@@ -78,43 +88,115 @@ padding-top: 50px;
     line-height: 29px;
 }
 .head{
-    background-image: url(../img/Rectangle-1.png);
-    background-position: top;
-    width: 1220px;
-    height: 750px;
-    margin: 0 360px;
+    background-image: url(../img/Figures-background.jpg);
+    background-repeat: no-repeat;
+    max-width: 1922px;
+    width: 1922px;
+    height: 800px;
+}
+.head__title{
+    padding-top: 211px;
+    padding-left: 2px;
 }
 .head__title h1{
-    /* Text style for "New Fashion
-Fa" */
-width: 464px;
-height: 117px;
-color: black;
-font-family: CormorantGaramond;
-font-size: 60px;
-font-weight: 700;
-line-height: 72px;
+    height: 117px;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
 }
-.title p{
-    /* Text style for "Save hours of" */
+.head__title p{
     width: 510px;
     height: 52px;
     color: #5c5c5c;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
+    margin-bottom: 30px;
 }
 .btn{
-    /* Text style for "View Lookbook" */
-   /* Style for "Button" */
     width: 200px;
     height: 55px;
     background-color: #b05442;
     border-radius: 5px;
     color: #fffefe;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 21px;
+    cursor: pointer;
+}
+.section__works{
+    width: 1922px;
+    height: 834px;
+}
+.section__works--head{
+padding-top: 97px;
+padding-bottom: 80px;
+}
+.section__works--head h1{
+    width: 335px;
+    height: 45px;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    display: flex;
+    justify-content: center;
+    
+}
+.image{
+    width: 370px;
+    height: 360px;
+}
+.section__works--content{
+    width: 370px;
+    height: 614px;
+}
+.section__works--img{
+    padding-bottom: 24px;
+}
+.section__works--inf{
+    width: 370px;
+    height: 229px;
+}
+.section__works--inf img{
+    padding-left: 15px;
+}
+.section__works--inf h2{
+    width: 251px;
+    height: 27px;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 108px;
+    float: right;
+}
+.section__works--inf p{
+    width: 251px;
+    height: 67px;
+    color: #5c5c5c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    float: right;
+    padding-bottom: 50px;
+    position: relative;
+}
+.section__products{
+    width: 1922px;
+    height: 945px;
+}
+.section__products--head h1{
+    width: 489px;
+    height: 45px;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    font-weight: 700;
 }
