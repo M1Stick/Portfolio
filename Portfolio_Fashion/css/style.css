@@ -41,7 +41,6 @@ header{
     margin: 0;
     padding: 0;
     display: flex;
-
 }
 .nav__item{
   
@@ -297,16 +296,16 @@ text-align: center;
     font-weight: 700;
 }
 .section__brands--img__5{
-    padding-top: 31px;
+    margin-top: 31px;
 }
 .section__brands--img__6{
-    padding-top: 31px;
+    margin-top: 31px;
 }
 .section__brands--img__7{
-    padding-top: 31px;
+    margin-top: 31px;
 }
 .section__brands--img__8{
-    padding-top: 31px;
+    margin-top: 31px;
     z-index: 1;
 }
 .section__brands--img__1:hover, 
@@ -373,8 +372,8 @@ text-align: center;
     flex-direction: column;
     text-align: center;
     padding: 30px 0;
-    position: absolute;
     left: 30%;
+    margin: 0 auto;
 }
 .section__touch--name{
     width: 690px;
@@ -387,6 +386,7 @@ text-align: center;
     padding: 15px 0;
     border: 1px solid #CFB28F;
     padding-left: 30px;
+    margin: 0 auto;
 }
 .section__touch--email{
     width: 690px;
@@ -399,6 +399,7 @@ text-align: center;
     padding: 15px 0;
     border: 1px solid #CFB28F;
     padding-left: 30px;
+    margin: 0 auto;
 }
 .section__touch--text{
     width: 690px;
@@ -412,12 +413,15 @@ text-align: center;
     overflow: hidden;
     resize:none;
     padding-left: 30px;
+    margin: 0 auto;
 }
 .section__touch--content__email{
     padding-top: 30px;
+    margin: 0 auto;
 }
 .section__touch--content__text{
     padding-top: 30px;
+    margin: 0 auto;
 }
 .btn__send{
     width: 200px;
@@ -431,7 +435,66 @@ text-align: center;
     line-height: 21px;
     border: 1px solid #b05442;
     cursor: pointer;
+    margin: 0 auto;
 }
 .section__touch--content__button{
     margin-top: 33px;
+}
+footer{
+    height: 300px;
+    background-color: #7f5859;
+}
+.footer__logo--img, .footer__logo--link{
+    margin-top: 125px;
+}
+.footer__nav--menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+}
+.footer__nav--link{
+    color: #fefefe;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-decoration: none;
+}
+.footer__nav--item:hover{
+    opacity: 0.7;
+}
+.footer__icons--menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 110px;
+}
+.footer__icons--img{
+    width: 30px;
+    height: 30px;
+}
+.footer__icons--item{
+    margin-right: 25px;
+}
+.footer__icons--item:hover{
+    opacity: 0.7;
+    transform: translateY(20px);
+    transition: .3 ease;
+}
+.footer__main{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    margin-top: 70px;
+}
+.footer__main h6{
+    color: #fefefe;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
 }
