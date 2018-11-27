@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700|Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css"/>
 </head>
 
 <body>
@@ -218,10 +220,24 @@
             <div class="row">
                 <div class="col">
                     <div class="section__review--content">
-                        <img src="./img/Photo.png" alt="" class="section__review--img animated flash slower">
+                        <div class="section__review--slide">
+                            <img src="./img/Photo.png" alt="" class="section__review--img animated flash slower">
                         <p>«Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Suspendisse nec purus vestibulum, condimentum ex vel,
-                            condimentum quam.»</p>
+                            condimentum quam.»</p>      
+                        </div>
+                        <div class="section__review--slide">
+                            <img src="./img/Photo1.png" alt="" class="section__review--img animated flash slower">
+                        <p>«Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse nec purus vestibulum, condimentum ex vel,
+                            condimentum quam.»</p>  
+                        </div>
+                        <div class="section__review--slide">
+                        <img src="./img/Photo2.png" alt="" class="section__review--img animated flash slower">
+                        <p>«Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Suspendisse nec purus vestibulum, condimentum ex vel,
+                            condimentum quam.»</p>  
+                        </div>
                     </div>
                 </div>
             </div>
@@ -350,6 +366,18 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+    $('.section__review--content').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,    
+        adaptiveHeight: true
+        });
+    </script>
 </body>
 
 </html>
