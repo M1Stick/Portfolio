@@ -14,8 +14,9 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700|Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css">
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -37,22 +38,22 @@
 
                                     </a>
                                 </li>
-                                <li class="nav__item"><a href="javascript:void(0)" class="nav__link">
+                                <li class="nav__item"><a href="#how_it_works" class="nav__link">
                                         How it works
 
                                     </a>
                                 </li>
-                                <li class="nav__item"><a href="javascript:void(0)" class="nav__link">
+                                <li class="nav__item"><a href="#our_products" class="nav__link">
                                         Our products
 
                                     </a>
                                 </li>
-                                <li class="nav__item"><a href="javascript:void(0)" class="nav__link">
+                                <li class="nav__item"><a href="#brands" class="nav__link">
                                         Brands
 
                                     </a>
                                 </li>
-                                <li class="nav__item"><a href="javascript:void(0)" class="nav__link">
+                                <li class="nav__item"><a href="#reviews" class="nav__link">
                                         Reviews
 
                                     </a>
@@ -74,7 +75,7 @@
 
         </div>
     </div>
-    <div class="section__works">
+    <div class="section__works" id="how_it_works">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -123,7 +124,7 @@
             </div>
         </div>
     </div>
-    <div class="section__products">
+    <div class="section__products" id="our_products">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -164,17 +165,17 @@
             </div>
             <div class="row">
                 <div class="col-6">
-                    <img src="./img/Image-1-1.jpg" alt="" class="section__products--img__1 animated bounce slow">
-                    <img src="./img/Image-3-1.jpg" alt="" class="section__products--img__2 animated bounce slow">
+                    <img src="./img/Image-1-1.jpg" alt="" class="section__products--img__1">
+                    <img src="./img/Image-3-1.jpg" alt="" class="section__products--img__2">
                 </div>
                 <div class="col-6">
-                    <img src="./img/Image-2-1.jpg" alt="" class="section__products--img__3 animated bounce slow">
-                    <img src="./img/Image-4-1.jpg" alt="" class="section__products--img__4 animated bounce slow">
+                    <img src="./img/Image-2-1.jpg" alt="" class="section__products--img__3">
+                    <img src="./img/Image-4-1.jpg" alt="" class="section__products--img__4">
                 </div>
             </div>
         </div>
     </div>
-    <div class="section__brands">
+    <div class="section__brands" id="brands">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -213,15 +214,35 @@
             </div>
         </div>
     </div>
-    <div class="section__review">
+    <div class="section__review" id="reviews">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="section__review--content">
-                        <img src="./img/Photo.png" alt="" class="section__review--img animated flash slower">
-                        <p>«Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Suspendisse nec purus vestibulum, condimentum ex vel,
-                            condimentum quam.»</p>
+                        <div class="section__review--item">
+                                <img src="./img/Photo 1.png" alt="" class="section__review--img">
+                                <p>«Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Suspendisse nec purus vestibulum, condimentum ex vel,
+                                    condimentum quam.»</p>
+                        </div>
+                        <div class="section__review--item">
+                                <img src="./img/Photo 2.png" alt="" class="section__review--img">
+                                <p>«Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Suspendisse nec purus vestibulum, condimentum ex vel,
+                                    condimentum quam.»</p>
+                        </div>
+                        <div class="section__review--item">
+                                <img src="./img/Photo 3.png" alt="" class="section__review--img">
+                                <p>«Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Suspendisse nec purus vestibulum, condimentum ex vel,
+                                    condimentum quam.»</p>
+                        </div>
+                        <div class="section__review--item">
+                            <img src="./img/Photo 4.png" alt="" class="section__review--img">
+                            <p>«Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Suspendisse nec purus vestibulum, condimentum ex vel,
+                                condimentum quam.»</p>            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -245,15 +266,15 @@
             </div>
             <div class="row">
                 <div class="section__touch--content">
-                    <form action="">
+                    <form>
                         <div class="section__touch--content__name">
-                            <input type="text" value="" class="section__touch--name" placeholder="Name">
+                            <input type="text" value="" class="section__touch--name" placeholder="Name" required>
                         </div>
                         <div class="section__touch--content__email">
                             <input type="email" name="" id="" class="section__touch--email" placeholder="Your email address" required >
                         </div>
                         <div class="section__touch--content__text">
-                            <textarea name="" id="" class="section__touch--text" cols="30" rows="10" placeholder="Message"></textarea>
+                            <textarea name="" id="" class="section__touch--text" cols="30" rows="10" placeholder="Message" required></textarea>
                         </div>
                         <div class="section__touch--content__button">
                             <button type="submit" value="" class="btn__send">Send</button>
@@ -277,18 +298,18 @@
                     <div class="footer__nav">
                         <ul class="footer__nav--menu">
                             <li class="footer__nav--item">
-                                <a href="http://" class="footer__nav--link">
+                                <a href="#how_it_works" class="footer__nav--link">
                                     How it works
                                 </a>
 
                             </li>
                             <li class="footer__nav--item">
-                                <a href="http://" class="footer__nav--link">
+                                <a href="#our_products" class="footer__nav--link">
                                     Check our products
                                 </a>
                             </li>
                             <li class="footer__nav--item">
-                                <a href="http://" class="footer__nav--link">
+                                <a href="#brands" class="footer__nav--link">
                                     Brands
                                 </a>
                             </li>
@@ -350,6 +371,18 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+    $('.section__review--content').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+    });
+    </script>
 </body>
 
 </html>
